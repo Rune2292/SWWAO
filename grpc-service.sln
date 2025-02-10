@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "microservices", "microservices", "{E3B4E780-84D4-4A40-BC65-6C4E160FE40A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grpc-service", "microservices\grpc-service\grpc-service.csproj", "{4B78E0AE-9812-4218-8781-7AAF39163EB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B78E0AE-9812-4218-8781-7AAF39163EB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B78E0AE-9812-4218-8781-7AAF39163EB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B78E0AE-9812-4218-8781-7AAF39163EB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B78E0AE-9812-4218-8781-7AAF39163EB7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4B78E0AE-9812-4218-8781-7AAF39163EB7} = {E3B4E780-84D4-4A40-BC65-6C4E160FE40A}
+	EndGlobalSection
+EndGlobal
