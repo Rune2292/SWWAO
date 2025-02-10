@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("grpc-service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c5dd530ce8628f1f9af0780750daf66910f8bc7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1381885583ed428d059664d1e0a99dc22f92b331")]
 [assembly: System.Reflection.AssemblyProductAttribute("grpc-service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("grpc-service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

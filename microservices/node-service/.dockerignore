@@ -1,0 +1,16 @@
+# Node
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Logs
+*.log
+logs
+dist
+coverage
+
+# OS
+.DS_Store
+
+# Env files (if you have one)
+.env
