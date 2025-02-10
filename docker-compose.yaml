@@ -1,0 +1,38 @@
+services:
+  mongodb:
+    image: mongo:8.0
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./volumes/data/mongodb:/data/db
+    environment:
+      MONGO_INITDB_DATABASE: db
+
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: mssqldb
+    platform: linux/amd64
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "Sup3rPassword!"
+      MSSQL_PID: "Developer"
+      MSSQL_TCPIP_ENABLED: "1"
+    volumes:
+      - ./.volumes/data/mssql:/var/opt/mssql/data
+      - ./.volumes/logs/mssql:/var/opt/mssql/log
+    ports:
+      - 1433:1433
+
+  rabbitmq:
+    image: rabbitmq:4-management-alpine
+    container_name: rabbitmq
+    ports:
+      - 5672:5672
+      - 15672:15672
+    volumes:
+      - ./.volumes/data/rabbitmq:/var/lib/rabbitmq
+      - ./.volumes/logs/rabbitmq:/var/log/rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_USER: kaninus
+      RABBITMQ_DEFAULT_PASSWORD: backflip
